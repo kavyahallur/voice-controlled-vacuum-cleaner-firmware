@@ -31,6 +31,11 @@ Designed an embedded system for a voice-controlled automatic vacuum cleaner usin
 
 ---
 
+## 🏗️ System Architecture
+![Architecture](architecture.png)
+
+---
+
 ## System Design
 The system was designed with a modular approach, separating communication, control, and sensing layers to ensure efficient real-time performance and easier debugging.
 
