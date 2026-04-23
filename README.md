@@ -31,11 +31,21 @@ Designed an embedded system for a voice-controlled automatic vacuum cleaner usin
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 ![Architecture](architecture.png)
 
 ---
 
+## System Functionality
+- Ultrasonic sensor for obstacle detection  
+- Sharp sensor to prevent falling from edges (e.g., stairs)  
+- Bluetooth-based control using Android application  
+- Supports both manual control and autonomous operation  
+- Powered by rechargeable 12V battery system
+
+  ---
+
+  
 ## System Design
 The system was designed with a modular approach, separating communication, control, and sensing layers to ensure efficient real-time performance and easier debugging.
 
