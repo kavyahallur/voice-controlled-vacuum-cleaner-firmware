@@ -1,5 +1,5 @@
 # Voice-Controlled Automatic Vacuum Cleaner Firmware (ATmega328)
-
+Embedded Systems Project | ATmega328 | UART | Bluetooth | Real-Time Control
 ## Overview
 Designed an embedded system for a voice-controlled automatic vacuum cleaner using the ATmega328 microcontroller. The system integrates Bluetooth communication, motor control, and sensor feedback to enable real-time operation.
 
@@ -44,8 +44,23 @@ Designed an embedded system for a voice-controlled automatic vacuum cleaner usin
 - Powered by rechargeable 12V battery system
 
   ---
-
   
+## Command Flow
+
+- 'F' → Move Forward  
+- 'B' → Move Backward  
+- 'L' → Turn Left  
+- 'R' → Turn Right  
+- 'S' → Stop  
+
+Flow:
+1. Command received via Bluetooth (UART)
+2. Processed by ATmega328 firmware
+3. Motor driver executes movement
+
+
+---
+
 ## System Design
 The system was designed with a modular approach, separating communication, control, and sensing layers to ensure efficient real-time performance and easier debugging.
 
@@ -59,5 +74,12 @@ The system was designed with a modular approach, separating communication, contr
 
 ---
 
+## Challenges & Solutions
+
+- Bluetooth delay → optimized command handling  
+- Sensor noise → basic filtering applied  
+- Motor control issues → refined signal timing
+
+---
 ## Note
 This repository focuses on system design, architecture, and implementation approach. Source code is not included.
